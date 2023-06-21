@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-94-HpR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fqF-aW-ClQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="330.33333333333331"/>
+                                        <subviews>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-hY-jC9">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                                <items>
+                                                    <barButtonItem tag="1001" title="Page 1" id="wlE-Y1-2Wb">
+                                                        <connections>
+                                                            <action selector="handleDownloadButton:" destination="BYZ-38-t0r" id="r5u-Kb-2hj"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem tag="1002" title="Page 2" id="is7-aa-WtP">
+                                                        <connections>
+                                                            <action selector="handleDownloadButton:" destination="BYZ-38-t0r" id="bvv-v6-bxg"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem tag="1003" title="Page 3" id="IKz-qd-pD9">
+                                                        <connections>
+                                                            <action selector="handleDownloadButton:" destination="BYZ-38-t0r" id="cbf-3v-ZzZ"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lfH-vx-276"/>
+                                                    <barButtonItem title="Tracelog" id="0Dr-GB-TSa">
+                                                        <connections>
+                                                            <action selector="handleTracelogButton:" destination="BYZ-38-t0r" id="qc5-xA-I4J"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMX-tS-7AI">
+                                                <rect key="frame" x="0.0" y="52" width="393" height="44"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="crE-P6-E9b">
+                                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="YsT-gY-NYG">
+                                                            <rect key="frame" x="16" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <connections>
+                                                                <action selector="handlePlainTextSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="g5A-cA-Obr"/>
+                                                            </connections>
+                                                        </switch>
+                                                    </barButtonItem>
+                                                    <barButtonItem enabled="NO" title="Plain text" id="AsV-xd-jgu"/>
+                                                </items>
+                                            </toolbar>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-lU-SJA">
+                                                <rect key="frame" x="0.0" y="104.00000000000001" width="393" height="226.33333333333337"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fqF-aW-ClQ" firstAttribute="leading" secondItem="zfp-j7-cnF" secondAttribute="leading" id="0Zx-Km-0Ol"/>
+                                    <constraint firstItem="zfp-j7-cnF" firstAttribute="top" secondItem="fqF-aW-ClQ" secondAttribute="top" id="Z2C-Ku-vsd"/>
+                                    <constraint firstItem="fqF-aW-ClQ" firstAttribute="width" secondItem="fFd-iC-8HY" secondAttribute="width" id="trN-Vp-QeI"/>
+                                    <constraint firstItem="fqF-aW-ClQ" firstAttribute="trailing" secondItem="zfp-j7-cnF" secondAttribute="trailing" id="wUa-Jm-yhv"/>
+                                    <constraint firstItem="fqF-aW-ClQ" firstAttribute="bottom" secondItem="zfp-j7-cnF" secondAttribute="bottom" id="xdk-kc-9H2"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zfp-j7-cnF"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fFd-iC-8HY"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gvg-94-HpR" secondAttribute="trailing" id="4i9-NG-Eub"/>
+                            <constraint firstItem="gvg-94-HpR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KEt-Sr-vPa"/>
+                            <constraint firstItem="gvg-94-HpR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P3t-IJ-xkE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gvg-94-HpR" secondAttribute="bottom" id="ftK-oS-HLi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="plainTextSwitch" destination="YsT-gY-NYG" id="Xy9-Ha-akI"/>
+                        <outlet property="textView" destination="aTj-lU-SJA" id="5m2-l2-WwA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
