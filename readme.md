@@ -5,7 +5,7 @@ LocalTracer
 
 Low-effort tracer of hand-picked code flows.
 
-![screenshot](Examples/screenshot.png)
+<img src="Examples/screenshot.png" height="220">
 
 
 Installation
@@ -41,7 +41,6 @@ See Examples for practical tracing.
 Export format
 --
 
-The exported JSON document adheres to [Trace Event Format][F1], and can be rendered in
-[chrome://tracing](chrome://tracing).
+The exported JSON document adheres to [Trace Event Format][F1], and can be rendered in chrome://tracing
 
 [F1]: https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/ "Trace Event Format"
