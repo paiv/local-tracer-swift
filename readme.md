@@ -41,6 +41,8 @@ See Examples for practical tracing.
 Export format
 --
 
-The exported JSON document adheres to [Trace Event Format][F1], and can be rendered in chrome://tracing
+The exported JSON document adheres to [Trace Event Format][F1], and can be rendered in
+- chrome://tracing
+- [ui.perfetto.dev](https://ui.perfetto.dev/ "open-source system profiling, app tracing and trace analysis")
 
 [F1]: https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/ "Trace Event Format"
